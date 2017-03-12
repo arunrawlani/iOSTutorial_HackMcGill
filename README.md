@@ -196,3 +196,8 @@ Once the code is added. Lets run the app. If everything is working fine then wel
 I have shared few resources below that can help your understanding of the Swift Code and iOS development even more. Feel free to shoot me a message at arun.rawlani@mail.mcgill.ca if you have any questions.
 
 Happy Tipping! 
+
+##Additional Resources##
+* 1 Probably the best resource on the internet to start off with iOS Application Development: https://www.raywenderlich.com/
+
+* 2 
