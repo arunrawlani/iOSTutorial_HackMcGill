@@ -13,6 +13,9 @@ So without further ado, lets begin coding our application.
 * 1 Open Xcode
 * 2 From the File menu, select New and then Project
 * 3 Under iOS, within the Application section, select Single View Application, and click Next
+
+![Choose App Type](https://github.com/arunrawlani/iOSTutorial_HackMcGill/blob/master/Images%20for%20Tutorial/choseapp.png)
+
 * 4 Enter "Tip Calculator" for the Product Name
 * 5 For Team, you can select your Apple Developer Team if you have one, or simply leave it as None.
 * 6 For Organization Name, you can enter your own name
