@@ -22,7 +22,7 @@ So without further ado, lets begin coding our application.
 * 7 Leave the organization identifier as it is
 * 8 Select Swift as the Language and iPhone as the device
 
-![Choose App Type](https://github.com/arunrawlani/iOSTutorial_HackMcGill/blob/master/Images%20for%20Tutorial/choseapp.png)
+![App Info](https://github.com/arunrawlani/iOSTutorial_HackMcGill/blob/master/Images%20for%20Tutorial/appinfo.png)
 
 * 9 Click Next and navigate to the place on your computer where you keep projects. Don't worry about naming the folder or anything like that, Xcode will handle it for you.
 * 10 Keep the Create Git Repository on My Mac checkbox selected, and click Create
@@ -47,6 +47,9 @@ Now lets add some text to our View Controller. The text holder UI Element in iOS
 
 * 1 On the bottom right of the screen, in the Object Browser, scroll until you find UILabel
 * 2 Drag and drop the label component onto your View Controller in the Story Board. Make sure it is in the center. Two dashed blue lines will appear indicating the center. You might need to zoom into the Storyboard if it won't let you drag the label in (pinch out on the trackpad)
+
+![Adding Label](https://github.com/arunrawlani/iOSTutorial_HackMcGill/blob/master/Images%20for%20Tutorial/putlabel.png)
+
 * 3 To change the text in the label, look at Utilities Panel on the right of your XCode screen and choose the Attributes Inspector section in it.
 * 4 In the second field in your Attributes Inspector, change "Label" to "Tip Calculator" and press enter. Now you've changed the text in the label.
 
