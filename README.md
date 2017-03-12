@@ -53,6 +53,8 @@ Now lets add some text to our View Controller. The text holder UI Element in iOS
 * 3 To change the text in the label, look at Utilities Panel on the right of your XCode screen and choose the Attributes Inspector section in it.
 * 4 In the second field in your Attributes Inspector, change "Label" to "Tip Calculator" and press enter. Now you've changed the text in the label.
 
+![Small Label](https://github.com/arunrawlani/iOSTutorial_HackMcGill/blob/master/Images%20for%20Tutorial/smalllabel.png)
+
 But damn! The label seems to be too small to display the whole text. We can simply drag the label to display the text but instead we are going to use this opportunity to get started with the most powerful part of Interface Builder that developers would have killed for back in the 90s.
 
 ####Auto Layout and Screen Constraints####
@@ -126,6 +128,10 @@ Now lets organize our labels and textfields by inputting the correct text before
 * 8 Select the button and change its title to Calculate from the attribute inspector.
 * 9 Select the segmented view element. Then for Segment 0 change title to 15%, then click on Segment and select segment 1. Then change its title to 18%. Then do the same thing for segment 2 and put 20% as the value.
 
+Final result should like like the following:
+
+![Layout Tree](https://github.com/arunrawlani/iOSTutorial_HackMcGill/blob/master/Images%20for%20Tutorial/layouttree.png)
+
 Now we are very close to finishing the UI of our app. So exciting! We have our very own tip calculator UI in under 2 hours. 
 
 Now lets add some more constraints to the Super Stacked View to finalize everything:
@@ -158,6 +164,9 @@ There are two main kinds of code connections: outlets, and actions. Outlets let 
 * 5 Control-click (or right-click) drag from the tip amount text field and name the outlet tipAmountField.
 * 6 Control-click (or right-click) drag from the total amount text field and name the outlet totalAmountField.
 * 7 Control-click (or right-click) drag from the calculate button to the view controller. Choose Action and name it calculateTip.
+
+Final result should look like the following:
+
 
 ####Adding the Code to Calculate Tip####
 
