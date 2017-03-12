@@ -21,6 +21,9 @@ So without further ado, lets begin coding our application.
 * 6 For Organization Name, you can enter your own name
 * 7 Leave the organization identifier as it is
 * 8 Select Swift as the Language and iPhone as the device
+
+![Choose App Type](https://github.com/arunrawlani/iOSTutorial_HackMcGill/blob/master/Images%20for%20Tutorial/choseapp.png)
+
 * 9 Click Next and navigate to the place on your computer where you keep projects. Don't worry about naming the folder or anything like that, Xcode will handle it for you.
 * 10 Keep the Create Git Repository on My Mac checkbox selected, and click Create
 
