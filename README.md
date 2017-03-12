@@ -146,6 +146,10 @@ Now to make sure that the individual components in the smaller stacked are not s
 * 2 Repeat this process for each other stack view row and the Calculate button.
 * 3 If a read line appears this means that there is a constraint conflict. Press the red button that appears in the Story Board Panel. This opens up suggestions to resolve the constraints issue. Add a constraint for the Y axis and update the frames. This will fix it.
 
+After the steps above your Story Board should look similar to this:
+
+![Storyboard Layout](https://github.com/arunrawlani/iOSTutorial_HackMcGill/blob/master/Images%20for%20Tutorial/storyboard.png)
+
 Aweeeesomeeee! So now we have completed the UI for our app. Lets fire up the simulator to see our app and it should look like a tip calculator. The only thing left is to add logic to calculate the tip!
 
 ### Adding Logic for your App ###
@@ -167,6 +171,7 @@ There are two main kinds of code connections: outlets, and actions. Outlets let 
 
 Final result should look like the following:
 
+![Code Connections](https://github.com/arunrawlani/iOSTutorial_HackMcGill/blob/master/Images%20for%20Tutorial/codeconnect.png)
 
 ####Adding the Code to Calculate Tip####
 
