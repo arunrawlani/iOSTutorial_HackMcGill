@@ -228,3 +228,5 @@ Happy Tipping!
 * 1 Probably the best resource on the internet to start off with iOS Application Development: https://www.raywenderlich.com/
 * 2 Apple's WWDC wesbite. Has videos for all the new libraries released for every year. Has presentations from Apple Engineers who give brief demos on how to use these new libraries. Extremely useful if you are diving into a lot of the native libraries for iOS Development: https://developer.apple.com/videos/
 
+Special thanks to Make School. Some of the tutorial instructions have been borrowed from their introductory tutorials!
+
