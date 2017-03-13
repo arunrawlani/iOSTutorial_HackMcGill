@@ -214,7 +214,11 @@ So lets add this code to our IBAction calculateTip that we created in the last s
     }
 }
 ```
-Once the code is added. Lets run the app. If everything is working fine then well.....Congratulations! You have created your very first iOS application. Your next steps could be to customize the design a bit. Add more options for tipping e.g. a custom option maybe.
+Once the code is added. Lets run the app. If everything is working fine then well.....Congratulations! You have created your very first iOS application!! :apple: :apple:
+
+![Final App](https://github.com/arunrawlani/iOSTutorial_HackMcGill/blob/master/Images%20for%20Tutorial/finalapp.png)
+
+Your next steps could be to customize the design a bit. Add more options for tipping e.g. a custom option maybe.
 
 I have shared few resources below that can help your understanding of the Swift Code and iOS development even more. Feel free to shoot me a message at arun.rawlani@mail.mcgill.ca if you have any questions.
 
@@ -223,3 +227,4 @@ Happy Tipping!
 ##Additional Resources##
 * 1 Probably the best resource on the internet to start off with iOS Application Development: https://www.raywenderlich.com/
 * 2 Apple's WWDC wesbite. Has videos for all the new libraries released for every year. Has presentations from Apple Engineers who give brief demos on how to use these new libraries. Extremely useful if you are diving into a lot of the native libraries for iOS Development: https://developer.apple.com/videos/
+
