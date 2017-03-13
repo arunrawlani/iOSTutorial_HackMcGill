@@ -2,10 +2,12 @@
 
 ### Your First iOS App 
 
-Hello, and welcome to the iOS Tutorial. Today we will be covering the basics of iOS Development and make our very own app, a Tip Calculator!
+Hello, and welcome to the iOS Tutorial. Today we will cover the basics of iOS Development and make our very own app, a Tip Calculator!
 
  In this tutorial, you will learn about using Xcode, building interfaces with auto-layout, and how to get an app running on your phone! This tutorial will assume a basic knowledge of Object Oriented programming and how some data types work in Swift. Dont worry if you are completely new to the language! Here are some resources that cover the required knowledge for this tutorial.
-
+ 
+* Apple documentation on Swift: https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/TheBasics.html
+* Tutorials Point Swift: https://www.tutorialspoint.com/swift/
 ### Initial Setup ###
 
 So without further ado, lets begin coding our application. 
@@ -27,7 +29,7 @@ So without further ado, lets begin coding our application.
 * 9 Click Next and navigate to the place on your computer where you keep projects. Don't worry about naming the folder or anything like that, Xcode will handle it for you.
 * 10 Keep the Create Git Repository on My Mac checkbox selected, and click Create
 
-Awesome, so now you've created your first project file using XCode and our next step is to start making our Tip Calculator iOS App!
+Awesome, so now you've setup your first project file using XCode and our next step is to start making our Tip Calculator iOS App!
 
 ### Your First iOS App UI ###
 
@@ -37,7 +39,7 @@ So there are two different ways of designing UIs for iOS applications. You can d
 
 The only time you would want to do your UI programmatically is when you are working on a big project and multiple changes on the Story Board can lead to merge conflicts. So keep this in mind if you are doing this at a hackathon with four other people.
 
-Select Main.storyboard from the project navigator. Right next to the Project Navigator is the Story Baord Navigator. It lists all the screens and UI elements you currently have in your Story Board. By default you have one View Controller on the Story Board. The gray arrow right next to it indicates the initiation point of the app.
+Select Main.storyboard from the project navigator. On the right of the Project Navigator is the Story Board Navigator. It lists all the screens and UI elements you currently have in your Story Board. By default you have one View Controller on the Story Board. The gray arrow right next to it indicates the initiation point of the app.
 
 So lets fire up the simulator and see where the app currently stands. All you can see is a blank screen which is the View Controller on the StoryBoard. Now we will proceed by adding UI components to the View Controller.
 
@@ -59,7 +61,7 @@ But damn! The label seems to be too small to display the whole text. We can simp
 
 ####Auto Layout and Screen Constraints####
 
-Recently, Apple released Auto Layout to allow developers to build iOS apps without caring too much about the different screen sizes. With Auto Layout, you have to set constraints with respect to your UI elements and allow these contraints to adapt to different screen sizes while maintaing your interface layout. 
+Recently, Apple released Auto Layout to allow developers to build iOS apps without caring too much about the different screen sizes. With Auto Layout, you have to set constraints with respect to your UI elements and allow these constraints to adapt to different screen sizes while maintaing your interface layout. 
 
 Auto Layout is an extremely powerful tool. And because great power comes with great responsibility, you need to spend some hours to get yourself accustomed with the tool. Some good resources to learn more about Auto Layout are:
 * 1 https://developer.apple.com/library/content/documentation/UserExperience/Conceptual/AutolayoutPG/
@@ -89,18 +91,18 @@ Now lets add more UI elements to our Tip Calculator. We will be using UILabel an
 * 7 Drag a Segmented Control from the Object Browser into its place (use the guides to position it).
 * 8 In the Attributes Inspector, change the segments from 2 to 3.
 
-Now run the simulator. The fields seems completely off. This is because we havent set constraints for them yet. 
+Now run the simulator. The fields look completely off. This is because we havent set constraints for them yet. 
 
 ####Setting constraints for the Added Elements####
 
-So to make sure that all the textfields look the same lets set some constraints for them.
+So to make sure that all the textfields look the same let us set some constraints for them.
 
 * 1 Click on the first text field to select it.
 * 2 Hold shift and click on the other two text fields to select them as well. Not the segmented control.
 * 3 Open the pin menu, check width, enter 85 and click add 3 constraints to apply the changes.
 * 4 Click on the segmented control and do the same but set the width to 125
 
-If you check using the simulator, the constraints are still broken. We will be fixing them using Stacked Views.
+You can verify using the simulator, the constraints are still broken. We will be fixing them using Stacked Views.
 
 ####Using Stacked Views####
 
@@ -128,11 +130,11 @@ Now lets organize our labels and textfields by inputting the correct text before
 * 8 Select the button and change its title to Calculate from the attribute inspector.
 * 9 Select the segmented view element. Then for Segment 0 change title to 15%, then click on Segment and select segment 1. Then change its title to 18%. Then do the same thing for segment 2 and put 20% as the value.
 
-Final result should like like the following:
+Final result should like the following:
 
 ![Layout Tree](https://github.com/arunrawlani/iOSTutorial_HackMcGill/blob/master/Images%20for%20Tutorial/layouttree.png)
 
-Now we are very close to finishing the UI of our app. So exciting! We have our very own tip calculator UI in under 2 hours. 
+We are very close to finishing the UI of our app. So exciting! We have our very own tip calculator UI in under 2 hours. 
 
 Now lets add some more constraints to the Super Stacked View to finalize everything:
 
@@ -141,7 +143,7 @@ Now lets add some more constraints to the Super Stacked View to finalize everyth
 * 3 Activate the left, top, and right constraints. Set the left and right to 50. Set the top to 20.
 * 4 Click on the Resolve Auto Layout Issues button next to the pin button and press Update Frames.
 
-Now to make sure that the individual components in the smaller stacked are not squished anymore, lets add a few more constraints:
+To make sure that the individual components in the smaller stacked are not squished anymore, lets add a few more constraints:
 * 1 Select Bill Amount Stack View in the Story Board panel, control-click (or right-click) drag from the Bill Amount Stack View to the Super Stack View and, in the menu that appears, select Equal Widths. This will ensure that the row is always the same width as the Super Stack View.
 * 2 Repeat this process for each other stack view row and the Calculate button.
 * 3 If a read line appears this means that there is a constraint conflict. Press the red button that appears in the Story Board Panel. This opens up suggestions to resolve the constraints issue. Add a constraint for the Y axis and update the frames. This will fix it.
@@ -157,7 +159,7 @@ Aweeeesomeeee! So now we have completed the UI for our app. Lets fire up the sim
 ####Linking your interface to code####
 Now that we have a UI, lets add code for our app to finish our application. XCode allows you to connect your interface layout with the code using the Assistant Editor which we will now be using.
 
-So first a little information on what these connections are:
+First a little information on what these connections are:
 There are two main kinds of code connections: outlets, and actions. Outlets let you assign a variable in code to a component of your interface you have created in your storyboard to interact with that component in code. We will use that to read and set values from our interface. Actions let our code know when the user did certain things to an interface component that we want to react to.
 
 ### Adding Code Connections ###
@@ -175,10 +177,10 @@ Final result should look like the following:
 
 ####Adding the Code to Calculate Tip####
 
-So now lets talk a little bit about if let statements in Swift before we jump onto writing the code. "if let" is a special statement that allows us to check the condition of a variable and perform actions based on that condition. In the code below, we are saying if you can cast billAmount to a Double and save it to a new variable called billAmount, then do nothing. However, if you cannot do this, then we should stop what we are doing and clear the fields". If the condition is met, then the function can continue.
+Lets talk a little bit about if let statements in Swift before we jump onto writing the code. "if let" is a special statement that allows us to check the condition of a variable and perform actions based on that condition. In the code below, we are saying if you can cast billAmount to a Double and save it to a new variable called billAmount, then do nothing. However, if you cannot do this, then we should stop what we are doing and clear the fields". If the condition is met, then the function can continue.
 
 
-So lets add this code to our IBAction calculateTip that we created in the last step:
+Add this code to our IBAction calculateTip that we have created in the previous step:
 
 ```swift
     @IBAction func calculateTip(sender: AnyObject) {
@@ -218,7 +220,7 @@ Once the code is added. Lets run the app. If everything is working fine then wel
 
 ![Final App](https://github.com/arunrawlani/iOSTutorial_HackMcGill/blob/master/Images%20for%20Tutorial/finalapp.png)
 
-Your next steps could be to customize the design a bit. Add more options for tipping e.g. a custom option maybe.
+Your next steps could be to customize the design a bit. Add more options for tipping e.g. a custom option maybe or maybe color the background of the label with the "Tip Calculator" text.
 
 I have shared few resources below that can help your understanding of the Swift Code and iOS development even more. Feel free to shoot me a message at arun.rawlani@mail.mcgill.ca if you have any questions.
 
